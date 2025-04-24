@@ -22,12 +22,6 @@ class PhantomWanPreprocessRefImage:
                 "ref_image_1": ("IMAGE",),
                 "target_width": ("INT", {"default": 1280, "min": 64, "max": 4096, "step": 8}),
                 "target_height": ("INT", {"default": 720, "min": 64, "max": 4096, "step": 8}),
-            },
-            "optional": {
-                # Allow up to 4 reference images
-                "ref_image_2": ("IMAGE", {"default": None}),
-                "ref_image_3": ("IMAGE", {"default": None}),
-                "ref_image_4": ("IMAGE", {"default": None}),
             }
         }
 
